@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Health<span>care</span>.</a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1 class="teks">Halo<span>.</span></h1>
+        <p class="desk1">
+          Kami siap membantu setiap permasalahan kesehatan anda.
+        </p>
+        <a href="#layanan" class="tbl-1">Test Kesehatanmu</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Layanan Section Start -->
+    <section class="layanan" id="layanan">
+      <div class="container">
+        <h2>Deteksi Kesehatan</h2>
+        <label for="symptoms">Masukkan gejala anda:</label>
+        <input
+          type="text"
+          id="symptoms"
+          placeholder="Contoh: Demam, Batuk,..."
+          onkeydown="if(event.key=='Enter'){detectDisease()}"
+        />
+        <button class="tbl-2" onclick="detectDisease()">
+          Deteksi Penyakit
+        </button>
+
+        <div id="result"></div>
+      </div>
+    </section>
+    <!-- Layanan Section End -->
+    <div id="contact">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <div class="contacts-list">
+              <a href="https://www.instagram.com/mrchlmanullang/">
+                <i data-feather="instagram"></i>
+              </a>
+              <a href="https://twitter.com/">
+                <i data-feather="twitter"></i>
+              </a>
+              <a href="https://www.facebook.com/">
+                <i data-feather="facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section Start-->
+    <!--Contacts-->
+    <!-- Contacr Section End-->
+
+    <script>
+      feather.replace();
+    </script>
+    <!-- My JS end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
